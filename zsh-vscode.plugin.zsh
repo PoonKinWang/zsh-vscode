@@ -6,19 +6,28 @@ local _vscode_paths > /dev/null 2>&1
 
 if [[ $('uname') == 'Linux' ]]; then
     _vscode_paths=(
-        "/usr/local/bin/code"
+        "$HOME/bin/code-insiders"
         "$HOME/bin/code"
+        "/usr/local/bin/code-insiders"
+        "/usr/local/bin/code"
+        "/opt/vscode/code-insiders"
         "/opt/vscode/code"
+        "/usr/bin/code-insiders"
+        "/usr/bin/code"
     )
 elif  [[ "$OSTYPE" = darwin* ]]; then
     local _vscode_paths > /dev/null 2>&1
     _vscode_paths=(
-        "/usr/local/bin/code"
-        "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
+        "$HOME/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code"
         "$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
+        "/usr/local/bin/code"
+        "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code"
+        "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
     )
 elif [[ "$OSTYPE" = 'cygwin' ]]; then
     _vscode_paths=(
+        "$(cygpath $ProgramW6432/Microsoft\ VS\ Code\ Insiders)/bin/code-insiders.cmd"
+        "$(cygpath $ProgramW6432/Microsoft\ VS\ Code)/bin/code.cmd"
         "$(cygpath $ProgramW6432/Visual\ Studio\ Code)/code.exe"
     )
 fi
