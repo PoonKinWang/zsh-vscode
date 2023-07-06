@@ -1,9 +1,9 @@
 # zsh-vscode
-[![file-search](.zsh-vscode.gif)](https://asciinema.org/a/Qkpnx9fyBLNYtyx9dPIvrxeKz)
 
 zsh-vscode is a plugin for Oh My Zsh that enhances the integration between Zsh and Visual Studio Code. It allows you to interact with Visual Studio Code directly from the command line, providing convenient shortcuts and autocompletion. 
 
 ### Autocompletion
+[![file-search](.zsh-vscode.gif)](https://asciinema.org/a/Qkpnx9fyBLNYtyx9dPIvrxeKz)
 Our plugin leverages the powerful autocompletion capabilities of Zsh. When using the code command, you can enjoy autocompletion for file paths, directories, and available Visual Studio Code commands.
 
 ### WSL Support
